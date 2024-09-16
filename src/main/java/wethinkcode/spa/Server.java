@@ -23,6 +23,12 @@ public class Server {
 
     public void start(int port) {
         this.appServer.start(port);
+//        System.setProperty("webdriver.chrome.driver", "/home/wtc/Downloads/chromedriver_linux64/chromedriver");
+//        ChromeOptions options = new ChromeOptions();
+//// If needed, specify the path to the Chrome binary
+//// options.setBinary("/path/to/chrome");
+//        WebDriver driver = new ChromeDriver(options);
+
     }
 
     public void stop() {
