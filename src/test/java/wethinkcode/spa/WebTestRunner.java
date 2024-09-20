@@ -35,14 +35,18 @@ public abstract class WebTestRunner {
 
     @BeforeEach
     void start() {
-        WebDriverManager.chromedriver().setup();
+
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--verbose");
         options.addArguments("--no-sandbox"); // necessary for grading environment
         options.addArguments("--headless");
         options.addArguments("--disable-gpu");
         options.addArguments("--start-maximized");
         options.addArguments("--start-fullscreen");
         driver = new ChromeDriver(options);
+
+
     }
 
     @AfterAll
