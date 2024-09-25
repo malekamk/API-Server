@@ -36,7 +36,8 @@ public abstract class WebTestRunner {
     @BeforeEach
     void start() {
 
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--verbose");
         options.addArguments("--no-sandbox"); // necessary for grading environment
