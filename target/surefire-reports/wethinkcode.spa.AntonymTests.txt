@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: wethinkcode.spa.AntonymTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.736 s <<< FAILURE! - in wethinkcode.spa.AntonymTests
+lookupHasEverything  Time elapsed: 0.731 s  <<< ERROR!
+org.openqa.selenium.InvalidElementStateException: 
+invalid element state
+  (Session info: chrome=129.0.6668.58)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-45-generic', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c538aba79bacd71985137f97421c5e6b, clearElement {id=f.512CA4F610324C32271C4B17789081A9.d.B831DDACCD293B17D11863151104DEDE.e.4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.58, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44201}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44201/devtoo..., se:cdpVersion: 129.0.6668.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (c538aba79bacd71985137f97421c5e6b)] -> id: lookup]
+Session ID: c538aba79bacd71985137f97421c5e6b
+	at wethinkcode.spa.AntonymTests.lookupHasEverything(AntonymTests.java:25)
+
