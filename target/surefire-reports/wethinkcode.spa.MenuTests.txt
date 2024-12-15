@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: wethinkcode.spa.MenuTests
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.811 s - in wethinkcode.spa.MenuTests
