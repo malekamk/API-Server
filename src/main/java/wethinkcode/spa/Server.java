@@ -31,7 +31,7 @@ public class Server {
 
         this.appServer.get("/health", ctx -> {
             ctx.status(200).result(
-                    "Portfolio server: Running...");
+                    "server: Running...");
         });
 
         this.appServer.post("/chat", Server::chatHandler);
