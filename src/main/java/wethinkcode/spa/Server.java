@@ -26,7 +26,7 @@ public class Server {
     public Server() {
         appServer = Javalin.create(config -> {
             config.enableCorsForAllOrigins(); // Allow all origins// Serve static files
-            config.defaultContentType = "application/json";        // Set default content type
+            config.defaultContentType = "application/json";
         });
 
         this.appServer.get("/health", ctx -> {
@@ -60,7 +60,7 @@ public class Server {
 
                 context.json(jsonResponse); // Return the image URLs as JSON
             } else {
-                context.status(HttpCode.NOT_FOUND).result("song not found");
+                context.status(HttpCode.NOT_FOUND).result("Song not found");
             }
         });
 
