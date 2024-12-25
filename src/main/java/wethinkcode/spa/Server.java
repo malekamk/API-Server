@@ -51,7 +51,7 @@ public class Server {
         });
         this.appServer.get("/api/Songs/{song}",context -> {
             String song = context.pathParam("song");
-            String accessToken = getAccessToken(CLIENT_ID, CLIENT_SECRET); // Get the access token
+            String accessToken = getAccessToken(CLIENT_ID, CLIENT_SECRET);
             if (song != null) {
 
 
