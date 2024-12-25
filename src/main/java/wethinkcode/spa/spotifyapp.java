@@ -22,7 +22,7 @@ public  class spotifyapp {
 
     public static JsonObject searchForSongs(String songName, String accessToken) {
 
-        JsonObject result = new JsonObject(); // Create a JSON object to hold the result
+        JsonObject result = new JsonObject();
         JsonArray topTracksArray = new JsonArray();
 
         try {
