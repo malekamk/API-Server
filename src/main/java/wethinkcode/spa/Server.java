@@ -25,7 +25,7 @@ public class Server {
 
     public Server() {
         appServer = Javalin.create(config -> {
-            config.enableCorsForAllOrigins(); // Allow all origins// Serve static files
+            config.enableCorsForAllOrigins();
             config.defaultContentType = "application/json";
         });
 
