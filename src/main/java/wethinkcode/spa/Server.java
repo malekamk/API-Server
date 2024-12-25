@@ -58,7 +58,7 @@ public class Server {
                 JsonObject topTracksResponse = searchForSongs(song,accessToken);
                 String jsonResponse = new Gson().toJson(topTracksResponse);
 
-                context.json(jsonResponse); // Return the image URLs as JSON
+                context.json(jsonResponse);
             } else {
                 context.status(HttpCode.NOT_FOUND).result("Song not found");
             }
