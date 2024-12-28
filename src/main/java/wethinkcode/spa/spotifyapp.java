@@ -77,7 +77,7 @@ public  class spotifyapp {
     public static JsonObject getTopTracks(String artistId, String accessToken) {
         JsonObject result = new JsonObject(); // Create a JSON object to hold the result
         JsonArray topTracksArray = new JsonArray();
-        int number = 6;// This will hold the individual track information
+        int number = 6;
 
         try {
             // First API call to get artist's profile (to fetch profile image)
