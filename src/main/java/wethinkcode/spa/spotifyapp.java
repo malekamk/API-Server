@@ -103,7 +103,7 @@ public  class spotifyapp {
                 result.addProperty("artistProfileImageUrl", artistImageObj.get("url").getAsString());
             }
 
-            // Second API call to get the artist's top tracks
+            // Second API call to get the artist's top trackss
             String topTracksUrl = "https://api.spotify.com/v1/artists/" + artistId + "/top-tracks?country=US";
             HttpURLConnection topTracksConnection = (HttpURLConnection) new URL(topTracksUrl).openConnection();
             topTracksConnection.setRequestMethod("GET");
